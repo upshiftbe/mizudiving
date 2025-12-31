@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@theme {
+  --color-ocean-50: #e6f7ff;
+  --color-ocean-100: #bae7ff;
+  --color-ocean-200: #91d5ff;
+  --color-ocean-300: #69c0ff;
+  --color-ocean-400: #40a9ff;
+  --color-ocean-500: #1890ff;
+  --color-ocean-600: #096dd9;
+  --color-ocean-700: #0050b3;
+  --color-ocean-800: #003a8c;
+  --color-ocean-900: #002766;
+}
