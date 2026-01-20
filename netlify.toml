@@ -1,0 +1,21 @@
+# Netlify configuration for Next.js deployment
+
+[build]
+  command = "pnpm build"
+  publish = ".next"
+
+# Redirect all requests to Next.js
+[[redirects]]
+  from = "/*"
+  to = "/"
+  status = 200
+  force = false
+
+# Enable Next.js Runtime for App Router support
+[build.environment]
+  NEXT_PRIVATE_TARGET = "server"
+  NODE_VERSION = "20"
+
+# Cache configuration for better build performance
+[[plugins]]
+  package = "@netlify/plugin-nextjs"

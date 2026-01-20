@@ -1,0 +1,6 @@
+# Mizu Diving - Robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://yourdomain.com/sitemap.xml
