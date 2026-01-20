@@ -128,19 +128,19 @@ const Services = () => {
           {services.map((service, index) => (
             <motion.div
               key={index}
-              variants={itemVariants}
+              variants={itemVariants as any}
               whileHover={{ y: -10 }}
-              transition={{ duration: 0.3 }}
+              transition={{ duration: 0.3, ease: [0.42, 0, 0.58, 1] }}
             >
               <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 h-full border border-gray-100 group relative overflow-hidden">
                 {/* Hover effect background */}
                 <motion.div
-                  className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-300`}
+                  className={`absolute inset-0 bg-linear-to-br ${service.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-300`}
                   initial={false}
                 />
 
                 <motion.div
-                  className={`text-white mb-6 inline-flex p-4 rounded-xl bg-gradient-to-br ${service.gradient} shadow-lg`}
+                  className={`text-white mb-6 inline-flex p-4 rounded-xl bg-linear-to-br ${service.gradient} shadow-lg`}
                   whileHover={{ rotate: 360, scale: 1.1 }}
                   transition={{ duration: 0.6 }}
                 >

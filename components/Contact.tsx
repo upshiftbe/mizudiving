@@ -107,7 +107,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Email</h4>
-                    <p className="text-gray-600">info@mizudiving.com</p>
+                    <p className="text-gray-600">mizudiving@gmail.com</p>
                   </div>
                 </motion.div>
                 <motion.div
@@ -132,6 +132,42 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Phone</h4>
                     <p className="text-gray-600">+1 (555) 123-4567</p>
+                  </div>
+                </motion.div>
+                <motion.div
+                  className="flex items-start p-4 rounded-xl hover:bg-white transition-colors group"
+                  whileHover={{ x: 5 }}
+                >
+                  <div className="w-12 h-12 rounded-full bg-ocean-100 flex items-center justify-center mr-4 group-hover:bg-ocean-600 transition-colors flex-shrink-0">
+                    <svg
+                      className="w-6 h-6 text-ocean-600 group-hover:text-white transition-colors"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                      />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-1">Address</h4>
+                    <p className="text-gray-600">
+                      V Van Cauwelaert<br />
+                      Steineggerhof 1<br />
+                      8855 Wangen SZ<br />
+                      Switzerland
+                    </p>
+                    <p className="text-gray-500 text-sm mt-2">CHE-448.368.357</p>
                   </div>
                 </motion.div>
               </div>
