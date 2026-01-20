@@ -32,18 +32,18 @@ const Header = () => {
             >
               Services
             </Link>
-            <Link
+            {/* <Link
               href="#gallery"
               className="text-gray-700 hover:text-ocean-600 transition-colors"
             >
               Gallery
-            </Link>
-            <Link
+            </Link> */}
+            {/* <Link
               href="#contact"
               className="bg-ocean-600 text-white px-4 py-2 rounded-lg hover:bg-ocean-700 transition-colors"
             >
               Contact
-            </Link>
+            </Link> */}
           </div>
 
           {/* Mobile Menu Button */}

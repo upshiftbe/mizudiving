@@ -32,22 +32,22 @@ const Footer = () => {
                   Services
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   href="#gallery"
                   className="hover:text-ocean-400 transition-colors"
                 >
                   Gallery
                 </Link>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <Link
                   href="#contact"
                   className="hover:text-ocean-400 transition-colors"
                 >
                   Contact
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 
